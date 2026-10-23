@@ -210,8 +210,8 @@ def main():
                     'feature_provider':'CachedEncoder, exact current-detection crop geometry'},
         oc_config=occonfig,shared_detection_file=str(root/'shared_detections.json'),
         shared_features=str(root/'osnet_features.npz'),
-        initialization='Custom variants use four manually selected first-frame seed points; baselines initialize automatically',
-        limitation='Custom persistent four-player prior and manual initialization differ from generic baselines; event is a development demo, not a held-out benchmark',
+        initialization='Custom variants use four supplied first-frame seed points (automatic camera setup or manual selection); baselines initialize automatically',
+        limitation='Custom persistent four-player prior and seeded initialization differ from generic baselines; event is a development demo, not a held-out benchmark',
         baseline_ids='Native tracker IDs preserved; never relabeled using later ground truth',
         court='Same expanded court ROI applied to every detection input. Homography costs only in custom variants; court map drawn for all methods for visualization.'),indent=2))
     print('Comparison complete:',out)

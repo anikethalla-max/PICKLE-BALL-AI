@@ -1,6 +1,7 @@
 import unittest
 from pathlib import Path
 import tempfile
+from unittest.mock import patch
 import cv2
 import numpy as np
 
@@ -31,6 +32,19 @@ class DashboardBackendTests(unittest.TestCase):
             path.write_bytes(b'not a video')
             with self.assertRaises(ValueError):
                 video_info(path)
+
+    def test_missing_prepared_clip_reports_a_helpful_error(self):
+        with tempfile.TemporaryDirectory(dir=ROOT/'outputs') as folder:
+            with patch('dashboard_backend.PREPARED',Path(folder)/'missing.mp4'):
+                with self.assertRaisesRegex(ValueError,'prepared demo clip is missing'):
+                    prepared_clip()
+
+    def test_upload_works_without_a_prepared_clip(self):
+        with tempfile.TemporaryDirectory(dir=ROOT/'outputs') as folder:
+            with patch('dashboard_backend.PREPARED',Path(folder)/'missing.mp4'):
+                clip=save_upload(PREPARED.read_bytes())
+                self.assertFalse(clip['prepared'])
+                self.assertEqual(clip['frames'],105)
 
     def test_court_requires_convex_ordered_corners(self):
         self.assertTrue(calibration_valid([[100,100],[300,100],[400,400],[20,400]]))

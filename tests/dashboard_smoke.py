@@ -5,6 +5,8 @@ from streamlit.testing.v1 import AppTest
 
 app=AppTest.from_file(str(Path(__file__).resolve().parents[1]/'dashboard.py'),default_timeout=90).run()
 assert not app.exception,[x.message for x in app.exception]
+assert app.get('file_uploader'), 'Upload control must be visible on first load'
+next(x for x in app.radio if x.label=='Video input').set_value('Prepared occlusion clip').run()
 assert len(app.tabs)==5
 assert any(x.label=='MOTA' for x in app.metric)
 next(x for x in app.selectbox if x.label=='Method details').set_value('ByteTrack').run()

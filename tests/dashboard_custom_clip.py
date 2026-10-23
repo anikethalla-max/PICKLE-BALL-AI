@@ -1,4 +1,4 @@
-"""Exercise a new upload at a different resolution/FPS without any GT labels."""
+"""Exercise a new upload at a different resolution/FPS with automatic draft reference labels."""
 import json
 from pathlib import Path
 import cv2
@@ -18,5 +18,5 @@ seeds=json.loads((ROOT/'reference/seeds_393s.json').read_text())
 scale=lambda points:[[round(x*2/3),round(y*2/3)] for x,y in points]
 job=start_job(clip,scale(corners),scale(seeds),'full')
 (folder/'job.json').write_text(json.dumps(dict(job=job,expected_frames=6,expected_fps=15,
-    expected_width=1280,expected_height=720,metrics_expected=False),indent=2))
+    expected_width=1280,expected_height=720,metrics_expected=True,reference_kind="automatic"),indent=2))
 print('New-upload full-pipeline job:',job)

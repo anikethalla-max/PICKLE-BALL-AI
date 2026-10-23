@@ -9,7 +9,7 @@ import streamlit as st
 from streamlit_image_coordinates import streamlit_image_coordinates
 
 from dashboard_backend import (ROOT,PREPARED,SAVED_RUN,METHODS,prepared_clip,save_upload,
-    calibration_valid,first_frame,web_video,start_job,read_status)
+    calibration_valid,first_frame,web_video,start_job,read_status,restore_prepared_clip)
 
 st.set_page_config(page_title='Smart Doubles AI | Prototype',page_icon='🎾',layout='wide')
 st.markdown('''<style>
@@ -104,22 +104,6 @@ def point_editor(clip):
 with st.sidebar:
     st.markdown('<div class="eyebrow">SMART DOUBLES AI</div>',unsafe_allow_html=True)
     st.title('Review demo')
-    source=st.radio('Video input',['Prepared occlusion clip','Upload a short clip'])
-    clip=None
-    if source=='Upload a short clip':
-        uploaded=st.file_uploader('Upload MP4',type=['mp4','mov','m4v'],help='Up to 30 seconds. Uploads stay on this computer.')
-        if uploaded:
-            try:
-                clip=save_upload(uploaded.getvalue())
-                if clip['prepared']:
-                    st.success('Prepared clip recognized. Calibration and reference draft loaded.')
-            except ValueError as error:
-                st.error(str(error))
-        with PREPARED.open('rb') as handle:
-            st.download_button('Download prepared 3.5 s clip',handle,file_name='pickleball_occlusion_3_5s.mp4',mime='video/mp4')
-    else:
-        clip=prepared_clip()
-    st.divider()
     st.caption('LOCAL APPLICATION')
     st.write('Video and results stay on this computer.')
     st.caption('Reference annotations follow SportsMOT-inspired rules. Draft labels still need independent human verification.')
@@ -128,8 +112,38 @@ with st.sidebar:
 st.markdown('<div class="eyebrow">SINGLE-CAMERA PICKLEBALL DOUBLES</div>',unsafe_allow_html=True)
 st.title('Player identities through occlusion')
 st.markdown('<div class="intro">Inspect the overlap, compare three baseline trackers, and explore court-aware adaptive association.</div>',unsafe_allow_html=True)
+st.subheader('Upload your video')
+extra_clip=ROOT/'data/occlusion_cross_court_0247/input_clip_3s.mp4'
+if extra_clip.exists():
+    st.download_button('Download cross-court occlusion clip · 3 seconds',extra_clip.read_bytes(),file_name='cross_court_occlusion_3s.mp4',mime='video/mp4')
+source=st.radio('Video input',['Upload a short clip','Prepared occlusion clip'],horizontal=True)
+clip=None
+if source=='Upload a short clip':
+    uploaded=st.file_uploader('Upload MP4',type=['mp4','mov','m4v'],help='Select Browse files or drag your clip here. Up to 30 seconds; uploads stay on this computer.')
+    if uploaded:
+        try:
+            clip=save_upload(uploaded.getvalue())
+            if clip['prepared']:
+                st.success('Prepared clip recognized. Calibration and reference draft loaded.')
+        except ValueError as error:
+            st.error(str(error))
+else:
+    try:
+        clip=prepared_clip()
+    except ValueError as error:
+        st.warning(str(error))
+if PREPARED.is_file():
+    st.download_button('Download prepared 3.5 s clip',PREPARED.read_bytes(),file_name='pickleball_occlusion_3_5s.mp4',mime='video/mp4')
+elif (ROOT/'Videos/InPlayBalls_54min_vid.mp4').is_file():
+    if st.button('Rebuild prepared clip'):
+        try:
+            with st.spinner('Extracting 06:33.000–06:36.500 from the source video…'):
+                restore_prepared_clip()
+            st.rerun()
+        except ValueError as error:
+            st.error(str(error))
 if clip is None:
-    st.info('Upload the prepared 3.5-second clip, or choose the prepared clip in the sidebar.')
+    st.info('Click Browse files above to select your video, or choose Prepared occlusion clip to use the local demo.')
     st.stop()
 
 prepared=clip['prepared']
@@ -137,20 +151,31 @@ if prepared:
     corners=read_json(ROOT/'reference/court_393s.json')['corners']
     seeds=read_json(ROOT/'reference/seeds_393s.json')
 else:
+    automatic_key='automatic_'+clip['sha256']
+    if automatic_key not in st.session_state:
+        try:
+            from automatic_setup import setup
+            with st.spinner('Recognizing court and initial players…'):
+                st.session_state[automatic_key]=setup(clip)
+        except Exception as error:
+            st.session_state[automatic_key]=str(error)
+    auto_setup=st.session_state[automatic_key]
     corners=st.session_state.get(f'points_{clip["sha256"][:20]}_court',[])
     seeds=st.session_state.get(f'points_{clip["sha256"][:20]}_players',[])
+    if isinstance(auto_setup,tuple):
+        corners,seeds=auto_setup
 
 job=st.session_state.get('active_job')
 job_matches=job and read_json(Path(job)/'config.json')['clip']['sha256']==clip['sha256']
 status=read_status(job) if job_matches else None
-run=Path(status['run']) if status and status['state']=='complete' else SAVED_RUN if prepared else None
+run=Path(status['run']) if status and status['state']=='complete' else SAVED_RUN if prepared and (SAVED_RUN/'experiment.json').is_file() else None
 is_saved=run==SAVED_RUN
 
 a,b,c,d=st.columns(4)
 a.metric('Selected sequence','06:33–06:36.5' if prepared else f'{clip["seconds"]:.2f} seconds')
 b.metric('Consecutive frames',str(clip['frames']))
 c.metric('Frame rate',f'{clip["fps"]:g} FPS')
-d.metric('Reference status','Draft labels' if prepared else 'Not supplied')
+d.metric('Reference status','Draft labels' if prepared else 'Automatic draft on run')
 st.caption('Results below: '+('last completed run' if run and not is_saved else 'saved prepared-clip experiment' if run else 'no tracking run yet'))
 input_tab,track_tab,annotation_tab,metric_tab,method_tab=st.tabs(['1 · Input','2 · Tracking','3 · Annotations','4 · Metrics','5 · Method'])
 
@@ -168,10 +193,17 @@ with input_tab:
         if prepared:
             st.success('Saved court calibration and initial P1–P4 selections are ready.')
         else:
-            st.info('Select the court corners and four initial player points below before running tracking.')
+            st.info('Upload → automatic draft labels → four tracking methods → agreement scores. Review labels before reporting accuracy.')
     if not prepared:
-        st.subheader('Court calibration and initial identities')
-        corners,seeds=point_editor(clip)
+        if isinstance(auto_setup,tuple):
+            st.success('Known camera registered; court and four initial players selected automatically.')
+            with st.expander('Override automatic court and player setup'):
+                manual_corners,manual_seeds=point_editor(clip)
+                if calibration_valid(manual_corners) and len(manual_seeds)==4:
+                    corners,seeds=manual_corners,manual_seeds
+        else:
+            st.info(auto_setup)
+            corners,seeds=point_editor(clip)
     else:
         with st.expander('Inspect saved calibration and initial identities'):
             image=first_frame(clip['path'])
@@ -190,10 +222,10 @@ with track_tab:
         cached=mode.startswith('Replay')
     else:
         cached=False
-        st.caption('New uploads run frame extraction, YOLO, OSNet and all tracking methods locally. Accuracy metrics need separate reference labels.')
+        st.caption('New uploads run frame extraction, YOLO, OSNet and all tracking methods locally. Independent YOLO11s draft annotations provide provisional agreement scores.')
     ready=calibration_valid(corners) and len(seeds)==4
     running=bool(status and status['state'] in ('queued','running'))
-    if st.button('Run comparison',type='primary',disabled=not ready or running):
+    if st.button('Annotate and compare',type='primary',disabled=not ready or running):
         try:
             st.session_state.active_job=start_job(clip,corners,seeds,'cached' if cached else 'full')
             st.session_state.pop('completed_job',None)
@@ -239,8 +271,14 @@ with annotation_tab:
         path=ROOT/'data/occlusion_0633/frames'/f'frame_{11789+index:08d}.jpg'
         marked=ROOT/'annotations/occlusion_0633/annotated_frames'/path.name
         a,b=st.columns(2)
-        a.image(str(path),caption=f'Raw frame · source {393+(index-1)/30:.3f} s',width='stretch')
-        b.image(str(marked),caption='Reference draft · P1–P4',width='stretch')
+        if path.is_file():
+            a.image(str(path),caption=f'Raw frame · source {393+(index-1)/30:.3f} s',width='stretch')
+        else:
+            a.info('Extract the prepared frames to inspect raw images.')
+        if marked.is_file():
+            b.image(str(marked),caption='Reference draft · P1–P4',width='stretch')
+        else:
+            b.info('Run build_annotations.py to generate the labeled frame images.')
         st.caption('105 frames · 420 full-athlete boxes · equipment and spectators excluded. Partial occlusion is labeled separately.')
         st.dataframe(pd.DataFrame({'Identity':['P1','P2','P3','P4'],
             'Player':['Near red top / red cap','Near black outfit','Far red top','Far grey outfit / white cap']}),hide_index=True,width='stretch')
@@ -248,7 +286,15 @@ with annotation_tab:
                            ('Download editable CVAT XML',ROOT/'annotations/occlusion_0633/cvat_reference_draft.xml')]:
             st.download_button(label,path.read_bytes(),file_name=path.name)
     else:
-        st.info('No reference annotations are attached to this uploaded video. The prepared clip’s labels are never reused for a different clip.')
+        annotation=Path(job)/'annotations' if job_matches else None
+        if annotation and (annotation/'annotations.json').exists():
+            st.warning('Automatic draft labels, not human-verified ground truth. IDs and missed occluded players may be wrong.')
+            index=st.slider('Automatic annotation frame',1,clip['frames'],1)
+            st.image(str(annotation/'annotated_frames'/f'frame_{index:06d}.jpg'),width='stretch')
+            st.caption(f'Annotated frames folder: {annotation / "annotated_frames"}')
+            st.download_button('Download automatic MOT labels',(annotation/'automatic_reference_mot.txt').read_bytes(),file_name='automatic_reference_mot.txt')
+        else:
+            st.info('Run Annotate and compare to generate automatic labels in a separate annotations folder.')
     st.markdown('[SportsMOT annotation reference · ICCV 2023](https://github.com/MCG-NJU/SportsMOT)')
     with st.expander('Read our annotation procedure'):
         st.markdown((ROOT/'ANNOTATION_PROTOCOL.md').read_text(encoding='utf-8'))
@@ -256,11 +302,13 @@ with annotation_tab:
 with metric_tab:
     st.subheader('Tracking quality on the selected sequence')
     metrics_file=run/'preliminary_metrics.json' if run else None
-    if not prepared or not metrics_file or not metrics_file.exists():
+    if not metrics_file or not metrics_file.exists():
         st.info('Accuracy metrics unavailable: this video has no attached reference annotations. Tracking output remains available after a run.')
     else:
         scores=read_json(metrics_file)
-        st.warning('Preliminary demonstration measurements on assistant-produced reference drafts. These are not independently validated research results.')
+        st.warning(scores['status'])
+        if scores.get('reference_kind')=='automatic':
+            st.write('These scores measure agreement with independent YOLO11s + greedy motion draft labels. Teacher misses and identity mistakes affect every score. They do not establish tracking accuracy.')
         data=pd.DataFrame(scores['metrics'])
         data['Method']=data['method'].map(METHODS)
         selected=st.selectbox('Method details',list(METHODS.values()),index=3)
@@ -276,12 +324,15 @@ with metric_tab:
         st.dataframe(table.style.format({name:'{:.2f}' for name in ['MOTA (%)','HOTA (%)','AssA (%)','IDF1 (%)']}),hide_index=True,width='stretch')
         chart=st.selectbox('Compare metric',['AssA (%)','MOTA (%)','HOTA (%)','IDF1 (%)'])
         st.bar_chart(table,x='Method',y=chart,color='#b8f36b',horizontal=True)
-        st.info('Adaptive and fixed-weight variants produced identical scores on this event. This does not demonstrate an accuracy gain from adaptation.')
+        adaptive=data[data.method=='adaptive_osnet'].iloc[0]
+        fixed=data[data.method=='fixed_osnet'].iloc[0]
+        if all(adaptive[k]==fixed[k] for k in ['MOTA_percent','AssA_percent','IDF1_percent']):
+            st.info('Adaptive and fixed-weight variants have identical scores on this clip; an adaptation gain is not demonstrated.')
         with st.expander('Metric definitions and fair-comparison limits'):
             st.write('MOTA counts missed detections, false detections and identity switches. AssA is HOTA’s association component; IDF1 measures identity consistency. All methods receive identical cached detections and the same court-region filter.')
-            st.write('Our method uses manually selected first-frame identities; the baselines initialize automatically. Reference box interpolation affects localization scores. This is one selected development event, not a held-out test set.')
+            st.write('Our method uses four selected first-frame identities (automatic when the camera is recognized); the baselines initialize automatically. Reference box interpolation affects localization scores. This is one selected development event, not a held-out test set.')
             st.dataframe(data[['Method','ID_switches_per_video_minute']].rename(columns={'ID_switches_per_video_minute':'Extrapolated switches / minute'}),hide_index=True,width='stretch')
-            st.caption('The per-minute rate is extrapolated from 3.5 seconds. It is not a whole-match measurement.')
+            st.caption('The per-minute rate is extrapolated from this short clip. It is not a whole-match measurement.')
         st.download_button('Download comparison CSV',(run/'preliminary_metrics.csv').read_bytes(),file_name='preliminary_comparison.csv',mime='text/csv')
 
 with method_tab:

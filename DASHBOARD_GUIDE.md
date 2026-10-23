@@ -1,5 +1,36 @@
 # Local browser demonstration
 
+## Automatic upload demonstration
+
+Restart Streamlit after updating the code (file watching is disabled). Run:
+
+```powershell
+cd D:\PICKLEBALL-AI
+.\.venv\Scripts\python.exe -m streamlit run dashboard.py
+```
+
+Upload `data/occlusion_cross_court_0247/input_clip_3s.mp4` (source 02:47–02:50,
+90 frames at 30 FPS). It contains partial near-player/far-player occlusion.
+For this known camera, registration transfers the approximate court calibration
+and YOLO selects four starting players. Other cameras require manual setup.
+On Tracking click **Annotate and compare**. After completion, Annotations shows
+automatic boxes and Metrics shows ByteTrack, OC-SORT, BoT-SORT + OSNet and our
+adaptive method. The fixed-weight variant is also included as an ablation.
+
+Automatic reference labels use a separate YOLO11s detector (first use downloads
+its pretrained weights) and greedy court-position association, independently of
+the evaluated trackers. Frames are saved in
+`outputs/dashboard_jobs/<job>/annotations/annotated_frames`; MOT labels and
+annotation provenance are alongside that folder. Hidden players are not assigned
+invented boxes. These are draft annotations: misses and ID errors require review.
+
+MOTA, HOTA, AssA, IDF1 and ID switches computed against automatic labels are
+**agreement scores, not verified accuracy**. The teacher and student detectors
+share a model family and COCO training, so their errors may be correlated.
+SportsMOT-inspired MOT formatting is the annotation reference; this automated
+procedure does not reproduce SportsMOT's human annotation and quality control.
+Independent reviewed ground truth is required for research accuracy claims.
+
 Double-click **start_demo.cmd** in `D:\PICKLEBALL-AI`. It opens your browser at
 **http://127.0.0.1:8501** once the app is ready. Keep the command window open. Press Ctrl+C there to
 stop the application. The app is local; it is not deployed or pushed to GitHub.
@@ -10,15 +41,16 @@ files following `COMPARISON_GUIDE.md`.
 
 ## Review presentation flow
 
-1. Keep “Prepared occlusion clip” selected, or download and upload that exact
-   3.5-second clip through the sidebar. The app recognizes its SHA-256 hash and
+1. On the main page, use “Upload a short clip” and click **Browse files**, or
+   choose “Prepared occlusion clip”. You can download the exact prepared clip
+   using the download button below the input. The app recognizes its SHA-256 hash and
    loads its saved calibration, initial identities and draft annotation reference.
 2. Show the overlap on **Input**. The sequence is source 06:33.000–06:36.500.
 3. On **Annotations**, move the frame slider through approach, overlap and
    separation. Explain that these are assistant-drawn keyframes with interpolated
    reference boxes, pending independent human verification.
 4. On **Tracking**, play the saved four-method comparison immediately, or click
-   **Run comparison**. Cached mode actually reruns every association method using
+   **Annotate and compare**. Cached mode actually reruns every association method using
    saved detector/OSNet features. Full mode reruns YOLO, OSNet and tracking too.
    The progress panel reports which stage is executing. CPU processing may take
    longer than video playback. Saved results remain available during a new run.

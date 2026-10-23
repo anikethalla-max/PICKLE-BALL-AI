@@ -58,13 +58,54 @@ def first_frame(path):
 
 
 def prepared_clip():
+    if not PREPARED.is_file():
+        raise ValueError('The prepared demo clip is missing. Upload a short clip or rebuild the prepared clip from the local source video.')
     return dict(path=str(PREPARED),sha256=digest(PREPARED),prepared=True,
                 name='Prepared occlusion clip',**video_info(PREPARED))
 
 
+def restore_prepared_clip():
+    """Recreate only the prepared video from the local source, atomically."""
+    source=ROOT/'Videos/InPlayBalls_54min_vid.mp4'
+    if not source.is_file():
+        raise ValueError('Source video not found in Videos/. Please upload a short clip instead.')
+    cap=cv2.VideoCapture(str(source))
+    writer=None
+    temp=PREPARED.with_name('input_clip.restoring.mp4')
+    try:
+        fps=cap.get(cv2.CAP_PROP_FPS)
+        if not cap.isOpened() or abs(fps-30)>.01:
+            raise ValueError('The prepared demo requires the original 30 FPS source video.')
+        cap.set(cv2.CAP_PROP_POS_FRAMES,11790)
+        PREPARED.parent.mkdir(parents=True,exist_ok=True)
+        for index in range(105):
+            ok,frame=cap.read()
+            if not ok or frame.shape[:2]!=(1080,1920):
+                raise ValueError('The source does not contain the expected 105-frame demo at the expected resolution.')
+            if writer is None:
+                writer=cv2.VideoWriter(str(temp),cv2.VideoWriter_fourcc(*'mp4v'),30,(1920,1080))
+                if not writer.isOpened():
+                    raise ValueError('Could not create the prepared video.')
+            writer.write(frame)
+        writer.release()
+        writer=None
+        cap.release()
+        info=video_info(temp)
+        if info['frames']!=105:
+            raise ValueError('The reconstructed clip has an unexpected frame count.')
+        temp.replace(PREPARED)
+        return prepared_clip()
+    finally:
+        cap.release()
+        if writer is not None:
+            writer.release()
+        if temp.exists():
+            temp.unlink()
+
+
 def save_upload(content):
     sha=hashlib.sha256(content).hexdigest()
-    if sha==digest(PREPARED):
+    if PREPARED.is_file() and sha==digest(PREPARED):
         return prepared_clip()
     folder=ROOT/'data/dashboard_uploads'/sha[:20]
     folder.mkdir(parents=True,exist_ok=True)
@@ -179,6 +220,12 @@ def run_job(job):
             script('appearance_osnet.py','--data-root',data)
         stage('Running three baselines, adaptive association and the fixed-weight ablation',.62)
         script('compare_trackers.py','--data-root',data,'--court',court,'--seeds',seeds,'--output',run)
+        if not clip['prepared']:
+            stage('Generating independent automatic draft annotations with YOLO11s',.80)
+            annotation=job/'annotations'
+            script('automatic_reference.py','--data-root',data,'--court',court,'--output',annotation)
+            stage('Computing agreement scores against automatic draft labels',.88)
+            script('evaluate_comparison.py','--run-root',run,'--reference',annotation/'automatic_reference_mot.txt','--reference-kind','automatic')
         if clip['prepared']:
             stage('Evaluating against the prepared reference draft',.84)
             script('evaluate_comparison.py','--run-root',run)
@@ -187,7 +234,7 @@ def run_job(job):
         for name in METHODS:
             web_video(run/name/'tracking.mp4')
         atomic_json(job/'status.json',dict(state='complete',message='Tracking completed',progress=1,
-                    run=str(run),metrics_available=clip['prepared']))
+                    run=str(run),metrics_available=True,reference_kind='draft' if clip['prepared'] else 'automatic'))
     except Exception as error:
         atomic_json(job/'status.json',dict(state='failed',message=str(error),progress=0,run=str(run)))
         raise
