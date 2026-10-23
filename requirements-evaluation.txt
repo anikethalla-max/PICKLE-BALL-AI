@@ -1,0 +1,2 @@
+# Optional: install after the prototype dependencies.
+trackeval>=1.0,<2

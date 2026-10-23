@@ -1,0 +1,6 @@
+{
+  "corners": [[730, 208], [1205, 208], [1700, 785], [235, 790]],
+  "width": 1920,
+  "height": 1080,
+  "note": "Manually checked against video_393s.jpg. Approximate baseline corners for demo; not surveyed calibration."
+}

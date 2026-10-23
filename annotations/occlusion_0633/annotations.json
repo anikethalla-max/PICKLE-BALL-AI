@@ -1,0 +1,5888 @@
+{
+  "status": "assistant_drawn_reference_draft; independent human verification pending",
+  "visibility_note": "MOT visibility=-1 means unknown; occluded is a qualitative annotation, not visible-area measurement",
+  "source": "SportsMOT ICCV 2023 annotation guidelines, adapted to pickleball",
+  "review_status": "All 105 frames assistant-reviewed via contact sheets; independent human verification pending",
+  "annotations": [
+    {
+      "frame": 1,
+      "source_frame": 11790,
+      "player_id": 1,
+      "box": [
+        840.0,
+        190.0,
+        960.0,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 1,
+      "source_frame": 11790,
+      "player_id": 2,
+      "box": [
+        356.0,
+        360.0,
+        564.0,
+        732.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 1,
+      "source_frame": 11790,
+      "player_id": 3,
+      "box": [
+        1030.0,
+        60.0,
+        1090.0,
+        210.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 1,
+      "source_frame": 11790,
+      "player_id": 4,
+      "box": [
+        770.0,
+        86.0,
+        844.0,
+        204.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 2,
+      "source_frame": 11791,
+      "player_id": 1,
+      "box": [
+        832.8,
+        192.0,
+        958.0,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 2,
+      "source_frame": 11791,
+      "player_id": 2,
+      "box": [
+        376.8,
+        352.8,
+        580.4,
+        721.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 2,
+      "source_frame": 11791,
+      "player_id": 3,
+      "box": [
+        1029.6,
+        60.8,
+        1089.2,
+        211.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 2,
+      "source_frame": 11791,
+      "player_id": 4,
+      "box": [
+        769.6,
+        85.6,
+        843.6,
+        204.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 3,
+      "source_frame": 11792,
+      "player_id": 1,
+      "box": [
+        825.6,
+        194.0,
+        956.0,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 3,
+      "source_frame": 11792,
+      "player_id": 2,
+      "box": [
+        397.6,
+        345.6,
+        596.8,
+        711.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 3,
+      "source_frame": 11792,
+      "player_id": 3,
+      "box": [
+        1029.2,
+        61.6,
+        1088.4,
+        212.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 3,
+      "source_frame": 11792,
+      "player_id": 4,
+      "box": [
+        769.2,
+        85.2,
+        843.2,
+        204.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 4,
+      "source_frame": 11793,
+      "player_id": 1,
+      "box": [
+        818.4,
+        196.0,
+        954.0,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 4,
+      "source_frame": 11793,
+      "player_id": 2,
+      "box": [
+        418.4,
+        338.4,
+        613.2,
+        700.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 4,
+      "source_frame": 11793,
+      "player_id": 3,
+      "box": [
+        1028.8,
+        62.4,
+        1087.6,
+        213.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 4,
+      "source_frame": 11793,
+      "player_id": 4,
+      "box": [
+        768.8,
+        84.8,
+        842.8,
+        204.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 5,
+      "source_frame": 11794,
+      "player_id": 1,
+      "box": [
+        811.2,
+        198.0,
+        952.0,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 5,
+      "source_frame": 11794,
+      "player_id": 2,
+      "box": [
+        439.2,
+        331.2,
+        629.6,
+        690.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 5,
+      "source_frame": 11794,
+      "player_id": 3,
+      "box": [
+        1028.4,
+        63.2,
+        1086.8,
+        214.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 5,
+      "source_frame": 11794,
+      "player_id": 4,
+      "box": [
+        768.4,
+        84.4,
+        842.4,
+        204.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 6,
+      "source_frame": 11795,
+      "player_id": 1,
+      "box": [
+        804.0,
+        200.0,
+        950.0,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 6,
+      "source_frame": 11795,
+      "player_id": 2,
+      "box": [
+        460.0,
+        324.0,
+        646.0,
+        680.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 6,
+      "source_frame": 11795,
+      "player_id": 3,
+      "box": [
+        1028.0,
+        64.0,
+        1086.0,
+        216.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 6,
+      "source_frame": 11795,
+      "player_id": 4,
+      "box": [
+        768.0,
+        84.0,
+        842.0,
+        204.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 7,
+      "source_frame": 11796,
+      "player_id": 1,
+      "box": [
+        803.2,
+        198.4,
+        944.4,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 7,
+      "source_frame": 11796,
+      "player_id": 2,
+      "box": [
+        478.8,
+        318.4,
+        663.2,
+        673.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 7,
+      "source_frame": 11796,
+      "player_id": 3,
+      "box": [
+        1028.0,
+        65.2,
+        1086.0,
+        218.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 7,
+      "source_frame": 11796,
+      "player_id": 4,
+      "box": [
+        768.0,
+        84.0,
+        842.4,
+        203.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 8,
+      "source_frame": 11797,
+      "player_id": 1,
+      "box": [
+        802.4,
+        196.8,
+        938.8,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 8,
+      "source_frame": 11797,
+      "player_id": 2,
+      "box": [
+        497.6,
+        312.8,
+        680.4,
+        667.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 8,
+      "source_frame": 11797,
+      "player_id": 3,
+      "box": [
+        1028.0,
+        66.4,
+        1086.0,
+        220.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 8,
+      "source_frame": 11797,
+      "player_id": 4,
+      "box": [
+        768.0,
+        84.0,
+        842.8,
+        203.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 9,
+      "source_frame": 11798,
+      "player_id": 1,
+      "box": [
+        801.6,
+        195.2,
+        933.2,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 9,
+      "source_frame": 11798,
+      "player_id": 2,
+      "box": [
+        516.4,
+        307.2,
+        697.6,
+        660.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 9,
+      "source_frame": 11798,
+      "player_id": 3,
+      "box": [
+        1028.0,
+        67.6,
+        1086.0,
+        222.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 9,
+      "source_frame": 11798,
+      "player_id": 4,
+      "box": [
+        768.0,
+        84.0,
+        843.2,
+        202.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 10,
+      "source_frame": 11799,
+      "player_id": 1,
+      "box": [
+        800.8,
+        193.6,
+        927.6,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 10,
+      "source_frame": 11799,
+      "player_id": 2,
+      "box": [
+        535.2,
+        301.6,
+        714.8,
+        654.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 10,
+      "source_frame": 11799,
+      "player_id": 3,
+      "box": [
+        1028.0,
+        68.8,
+        1086.0,
+        224.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 10,
+      "source_frame": 11799,
+      "player_id": 4,
+      "box": [
+        768.0,
+        84.0,
+        843.6,
+        202.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 11,
+      "source_frame": 11800,
+      "player_id": 1,
+      "box": [
+        800.0,
+        192.0,
+        922.0,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 11,
+      "source_frame": 11800,
+      "player_id": 2,
+      "box": [
+        554.0,
+        296.0,
+        732.0,
+        648.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 11,
+      "source_frame": 11800,
+      "player_id": 3,
+      "box": [
+        1028.0,
+        70.0,
+        1086.0,
+        226.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 11,
+      "source_frame": 11800,
+      "player_id": 4,
+      "box": [
+        768.0,
+        84.0,
+        844.0,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 12,
+      "source_frame": 11801,
+      "player_id": 1,
+      "box": [
+        801.6,
+        192.4,
+        929.6,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 12,
+      "source_frame": 11801,
+      "player_id": 2,
+      "box": [
+        568.8,
+        292.4,
+        756.4,
+        639.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 12,
+      "source_frame": 11801,
+      "player_id": 3,
+      "box": [
+        1027.6,
+        70.0,
+        1085.2,
+        226.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 12,
+      "source_frame": 11801,
+      "player_id": 4,
+      "box": [
+        767.6,
+        84.0,
+        843.6,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 13,
+      "source_frame": 11802,
+      "player_id": 1,
+      "box": [
+        803.2,
+        192.8,
+        937.2,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 13,
+      "source_frame": 11802,
+      "player_id": 2,
+      "box": [
+        583.6,
+        288.8,
+        780.8,
+        630.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 13,
+      "source_frame": 11802,
+      "player_id": 3,
+      "box": [
+        1027.2,
+        70.0,
+        1084.4,
+        226.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 13,
+      "source_frame": 11802,
+      "player_id": 4,
+      "box": [
+        767.2,
+        84.0,
+        843.2,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 14,
+      "source_frame": 11803,
+      "player_id": 1,
+      "box": [
+        804.8,
+        193.2,
+        944.8,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 14,
+      "source_frame": 11803,
+      "player_id": 2,
+      "box": [
+        598.4,
+        285.2,
+        805.2,
+        621.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 14,
+      "source_frame": 11803,
+      "player_id": 3,
+      "box": [
+        1026.8,
+        70.0,
+        1083.6,
+        227.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 14,
+      "source_frame": 11803,
+      "player_id": 4,
+      "box": [
+        766.8,
+        84.0,
+        842.8,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 15,
+      "source_frame": 11804,
+      "player_id": 1,
+      "box": [
+        806.4,
+        193.6,
+        952.4,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 15,
+      "source_frame": 11804,
+      "player_id": 2,
+      "box": [
+        613.2,
+        281.6,
+        829.6,
+        612.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 15,
+      "source_frame": 11804,
+      "player_id": 3,
+      "box": [
+        1026.4,
+        70.0,
+        1082.8,
+        227.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 15,
+      "source_frame": 11804,
+      "player_id": 4,
+      "box": [
+        766.4,
+        84.0,
+        842.4,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 16,
+      "source_frame": 11805,
+      "player_id": 1,
+      "box": [
+        808.0,
+        194.0,
+        960.0,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 16,
+      "source_frame": 11805,
+      "player_id": 2,
+      "box": [
+        628.0,
+        278.0,
+        854.0,
+        604.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 16,
+      "source_frame": 11805,
+      "player_id": 3,
+      "box": [
+        1026.0,
+        70.0,
+        1082.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 16,
+      "source_frame": 11805,
+      "player_id": 4,
+      "box": [
+        766.0,
+        84.0,
+        842.0,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 17,
+      "source_frame": 11806,
+      "player_id": 1,
+      "box": [
+        810.0,
+        196.8,
+        962.0,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 17,
+      "source_frame": 11806,
+      "player_id": 2,
+      "box": [
+        662.0,
+        276.4,
+        868.0,
+        600.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 17,
+      "source_frame": 11806,
+      "player_id": 3,
+      "box": [
+        1025.2,
+        70.0,
+        1081.2,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 17,
+      "source_frame": 11806,
+      "player_id": 4,
+      "box": [
+        766.0,
+        83.6,
+        842.8,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 18,
+      "source_frame": 11807,
+      "player_id": 1,
+      "box": [
+        812.0,
+        199.6,
+        964.0,
+        450.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 18,
+      "source_frame": 11807,
+      "player_id": 2,
+      "box": [
+        696.0,
+        274.8,
+        882.0,
+        597.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 18,
+      "source_frame": 11807,
+      "player_id": 3,
+      "box": [
+        1024.4,
+        70.0,
+        1080.4,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 18,
+      "source_frame": 11807,
+      "player_id": 4,
+      "box": [
+        766.0,
+        83.2,
+        843.6,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 19,
+      "source_frame": 11808,
+      "player_id": 1,
+      "box": [
+        814.0,
+        202.4,
+        966.0,
+        450.0
+      ],
+      "occluded": true,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 19,
+      "source_frame": 11808,
+      "player_id": 2,
+      "box": [
+        730.0,
+        273.2,
+        896.0,
+        594.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 19,
+      "source_frame": 11808,
+      "player_id": 3,
+      "box": [
+        1023.6,
+        70.0,
+        1079.6,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 19,
+      "source_frame": 11808,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.8,
+        844.4,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 20,
+      "source_frame": 11809,
+      "player_id": 1,
+      "box": [
+        816.0,
+        205.2,
+        968.0,
+        450.0
+      ],
+      "occluded": true,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 20,
+      "source_frame": 11809,
+      "player_id": 2,
+      "box": [
+        764.0,
+        271.6,
+        910.0,
+        591.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 20,
+      "source_frame": 11809,
+      "player_id": 3,
+      "box": [
+        1022.8,
+        70.0,
+        1078.8,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 20,
+      "source_frame": 11809,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.4,
+        845.2,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 21,
+      "source_frame": 11810,
+      "player_id": 1,
+      "box": [
+        818.0,
+        208.0,
+        970.0,
+        450.0
+      ],
+      "occluded": true,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 21,
+      "source_frame": 11810,
+      "player_id": 2,
+      "box": [
+        798.0,
+        270.0,
+        924.0,
+        588.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 21,
+      "source_frame": 11810,
+      "player_id": 3,
+      "box": [
+        1022.0,
+        70.0,
+        1078.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 21,
+      "source_frame": 11810,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        846.0,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 22,
+      "source_frame": 11811,
+      "player_id": 1,
+      "box": [
+        824.0,
+        204.8,
+        972.0,
+        450.0
+      ],
+      "occluded": true,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 22,
+      "source_frame": 11811,
+      "player_id": 2,
+      "box": [
+        814.0,
+        265.6,
+        940.8,
+        580.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 22,
+      "source_frame": 11811,
+      "player_id": 3,
+      "box": [
+        1021.2,
+        70.0,
+        1078.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 22,
+      "source_frame": 11811,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        846.4,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 23,
+      "source_frame": 11812,
+      "player_id": 1,
+      "box": [
+        830.0,
+        201.6,
+        974.0,
+        450.0
+      ],
+      "occluded": true,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 23,
+      "source_frame": 11812,
+      "player_id": 2,
+      "box": [
+        830.0,
+        261.2,
+        957.6,
+        573.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 23,
+      "source_frame": 11812,
+      "player_id": 3,
+      "box": [
+        1020.4,
+        70.0,
+        1078.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 23,
+      "source_frame": 11812,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        846.8,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 24,
+      "source_frame": 11813,
+      "player_id": 1,
+      "box": [
+        836.0,
+        198.4,
+        976.0,
+        450.0
+      ],
+      "occluded": true,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 24,
+      "source_frame": 11813,
+      "player_id": 2,
+      "box": [
+        846.0,
+        256.8,
+        974.4,
+        566.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 24,
+      "source_frame": 11813,
+      "player_id": 3,
+      "box": [
+        1019.6,
+        70.0,
+        1078.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 24,
+      "source_frame": 11813,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        847.2,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 25,
+      "source_frame": 11814,
+      "player_id": 1,
+      "box": [
+        842.0,
+        195.2,
+        978.0,
+        450.0
+      ],
+      "occluded": true,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 25,
+      "source_frame": 11814,
+      "player_id": 2,
+      "box": [
+        862.0,
+        252.4,
+        991.2,
+        559.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 25,
+      "source_frame": 11814,
+      "player_id": 3,
+      "box": [
+        1018.8,
+        70.0,
+        1078.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 25,
+      "source_frame": 11814,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        847.6,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 26,
+      "source_frame": 11815,
+      "player_id": 1,
+      "box": [
+        848.0,
+        192.0,
+        980.0,
+        450.0
+      ],
+      "occluded": true,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 26,
+      "source_frame": 11815,
+      "player_id": 2,
+      "box": [
+        878.0,
+        248.0,
+        1008.0,
+        552.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 26,
+      "source_frame": 11815,
+      "player_id": 3,
+      "box": [
+        1018.0,
+        70.0,
+        1078.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 26,
+      "source_frame": 11815,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        848.0,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 27,
+      "source_frame": 11816,
+      "player_id": 1,
+      "box": [
+        856.4,
+        191.2,
+        985.6,
+        450.4
+      ],
+      "occluded": true,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 27,
+      "source_frame": 11816,
+      "player_id": 2,
+      "box": [
+        896.8,
+        249.2,
+        1029.2,
+        544.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 27,
+      "source_frame": 11816,
+      "player_id": 3,
+      "box": [
+        1016.8,
+        70.0,
+        1078.4,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 27,
+      "source_frame": 11816,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.8,
+        847.6,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 28,
+      "source_frame": 11817,
+      "player_id": 1,
+      "box": [
+        864.8,
+        190.4,
+        991.2,
+        450.8
+      ],
+      "occluded": true,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 28,
+      "source_frame": 11817,
+      "player_id": 2,
+      "box": [
+        915.6,
+        250.4,
+        1050.4,
+        536.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 28,
+      "source_frame": 11817,
+      "player_id": 3,
+      "box": [
+        1015.6,
+        70.0,
+        1078.8,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 28,
+      "source_frame": 11817,
+      "player_id": 4,
+      "box": [
+        766.0,
+        83.6,
+        847.2,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 29,
+      "source_frame": 11818,
+      "player_id": 1,
+      "box": [
+        873.2,
+        189.6,
+        996.8,
+        451.2
+      ],
+      "occluded": true,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 29,
+      "source_frame": 11818,
+      "player_id": 2,
+      "box": [
+        934.4,
+        251.6,
+        1071.6,
+        529.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 29,
+      "source_frame": 11818,
+      "player_id": 3,
+      "box": [
+        1014.4,
+        70.0,
+        1079.2,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 29,
+      "source_frame": 11818,
+      "player_id": 4,
+      "box": [
+        766.0,
+        84.4,
+        846.8,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 30,
+      "source_frame": 11819,
+      "player_id": 1,
+      "box": [
+        881.6,
+        188.8,
+        1002.4,
+        451.6
+      ],
+      "occluded": true,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 30,
+      "source_frame": 11819,
+      "player_id": 2,
+      "box": [
+        953.2,
+        252.8,
+        1092.8,
+        521.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 30,
+      "source_frame": 11819,
+      "player_id": 3,
+      "box": [
+        1013.2,
+        70.0,
+        1079.6,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 30,
+      "source_frame": 11819,
+      "player_id": 4,
+      "box": [
+        766.0,
+        85.2,
+        846.4,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 31,
+      "source_frame": 11820,
+      "player_id": 1,
+      "box": [
+        890.0,
+        188.0,
+        1008.0,
+        452.0
+      ],
+      "occluded": true,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 31,
+      "source_frame": 11820,
+      "player_id": 2,
+      "box": [
+        972.0,
+        254.0,
+        1114.0,
+        514.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 31,
+      "source_frame": 11820,
+      "player_id": 3,
+      "box": [
+        1012.0,
+        70.0,
+        1080.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 31,
+      "source_frame": 11820,
+      "player_id": 4,
+      "box": [
+        766.0,
+        86.0,
+        846.0,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 32,
+      "source_frame": 11821,
+      "player_id": 1,
+      "box": [
+        899.6,
+        191.6,
+        1019.6,
+        452.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 32,
+      "source_frame": 11821,
+      "player_id": 2,
+      "box": [
+        985.6,
+        251.2,
+        1122.8,
+        513.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 32,
+      "source_frame": 11821,
+      "player_id": 3,
+      "box": [
+        1012.8,
+        70.0,
+        1080.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 32,
+      "source_frame": 11821,
+      "player_id": 4,
+      "box": [
+        766.0,
+        85.6,
+        845.6,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 33,
+      "source_frame": 11822,
+      "player_id": 1,
+      "box": [
+        909.2,
+        195.2,
+        1031.2,
+        452.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 33,
+      "source_frame": 11822,
+      "player_id": 2,
+      "box": [
+        999.2,
+        248.4,
+        1131.6,
+        512.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 33,
+      "source_frame": 11822,
+      "player_id": 3,
+      "box": [
+        1013.6,
+        70.0,
+        1080.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 33,
+      "source_frame": 11822,
+      "player_id": 4,
+      "box": [
+        766.0,
+        85.2,
+        845.2,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 34,
+      "source_frame": 11823,
+      "player_id": 1,
+      "box": [
+        918.8,
+        198.8,
+        1042.8,
+        452.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 34,
+      "source_frame": 11823,
+      "player_id": 2,
+      "box": [
+        1012.8,
+        245.6,
+        1140.4,
+        511.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 34,
+      "source_frame": 11823,
+      "player_id": 3,
+      "box": [
+        1014.4,
+        70.0,
+        1080.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 34,
+      "source_frame": 11823,
+      "player_id": 4,
+      "box": [
+        766.0,
+        84.8,
+        844.8,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 35,
+      "source_frame": 11824,
+      "player_id": 1,
+      "box": [
+        928.4,
+        202.4,
+        1054.4,
+        452.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 35,
+      "source_frame": 11824,
+      "player_id": 2,
+      "box": [
+        1026.4,
+        242.8,
+        1149.2,
+        510.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 35,
+      "source_frame": 11824,
+      "player_id": 3,
+      "box": [
+        1015.2,
+        70.0,
+        1080.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 35,
+      "source_frame": 11824,
+      "player_id": 4,
+      "box": [
+        766.0,
+        84.4,
+        844.4,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 36,
+      "source_frame": 11825,
+      "player_id": 1,
+      "box": [
+        938.0,
+        206.0,
+        1066.0,
+        452.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 36,
+      "source_frame": 11825,
+      "player_id": 2,
+      "box": [
+        1040.0,
+        240.0,
+        1158.0,
+        510.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 36,
+      "source_frame": 11825,
+      "player_id": 3,
+      "box": [
+        1016.0,
+        70.0,
+        1080.0,
+        228.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 36,
+      "source_frame": 11825,
+      "player_id": 4,
+      "box": [
+        766.0,
+        84.0,
+        844.0,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 37,
+      "source_frame": 11826,
+      "player_id": 1,
+      "box": [
+        936.8,
+        206.4,
+        1066.8,
+        452.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 37,
+      "source_frame": 11826,
+      "player_id": 2,
+      "box": [
+        1047.2,
+        240.4,
+        1170.4,
+        514.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 37,
+      "source_frame": 11826,
+      "player_id": 3,
+      "box": [
+        1016.8,
+        70.0,
+        1080.0,
+        228.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 37,
+      "source_frame": 11826,
+      "player_id": 4,
+      "box": [
+        766.0,
+        83.6,
+        843.6,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 38,
+      "source_frame": 11827,
+      "player_id": 1,
+      "box": [
+        935.6,
+        206.8,
+        1067.6,
+        452.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 38,
+      "source_frame": 11827,
+      "player_id": 2,
+      "box": [
+        1054.4,
+        240.8,
+        1182.8,
+        518.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 38,
+      "source_frame": 11827,
+      "player_id": 3,
+      "box": [
+        1017.6,
+        70.0,
+        1080.0,
+        229.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 38,
+      "source_frame": 11827,
+      "player_id": 4,
+      "box": [
+        766.0,
+        83.2,
+        843.2,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 39,
+      "source_frame": 11828,
+      "player_id": 1,
+      "box": [
+        934.4,
+        207.2,
+        1068.4,
+        453.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 39,
+      "source_frame": 11828,
+      "player_id": 2,
+      "box": [
+        1061.6,
+        241.2,
+        1195.2,
+        522.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 39,
+      "source_frame": 11828,
+      "player_id": 3,
+      "box": [
+        1018.4,
+        70.0,
+        1080.0,
+        230.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 39,
+      "source_frame": 11828,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.8,
+        842.8,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 40,
+      "source_frame": 11829,
+      "player_id": 1,
+      "box": [
+        933.2,
+        207.6,
+        1069.2,
+        453.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 40,
+      "source_frame": 11829,
+      "player_id": 2,
+      "box": [
+        1068.8,
+        241.6,
+        1207.6,
+        526.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 40,
+      "source_frame": 11829,
+      "player_id": 3,
+      "box": [
+        1019.2,
+        70.0,
+        1080.0,
+        231.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 40,
+      "source_frame": 11829,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.4,
+        842.4,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 41,
+      "source_frame": 11830,
+      "player_id": 1,
+      "box": [
+        932.0,
+        208.0,
+        1070.0,
+        454.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 41,
+      "source_frame": 11830,
+      "player_id": 2,
+      "box": [
+        1076.0,
+        242.0,
+        1220.0,
+        530.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 41,
+      "source_frame": 11830,
+      "player_id": 3,
+      "box": [
+        1020.0,
+        70.0,
+        1080.0,
+        232.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 41,
+      "source_frame": 11830,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        842.0,
+        202.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 42,
+      "source_frame": 11831,
+      "player_id": 1,
+      "box": [
+        932.0,
+        208.4,
+        1070.4,
+        454.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 42,
+      "source_frame": 11831,
+      "player_id": 2,
+      "box": [
+        1086.8,
+        241.6,
+        1227.2,
+        529.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 42,
+      "source_frame": 11831,
+      "player_id": 3,
+      "box": [
+        1021.6,
+        70.0,
+        1081.2,
+        233.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 42,
+      "source_frame": 11831,
+      "player_id": 4,
+      "box": [
+        766.0,
+        81.6,
+        842.4,
+        202.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 43,
+      "source_frame": 11832,
+      "player_id": 1,
+      "box": [
+        932.0,
+        208.8,
+        1070.8,
+        454.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 43,
+      "source_frame": 11832,
+      "player_id": 2,
+      "box": [
+        1097.6,
+        241.2,
+        1234.4,
+        528.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 43,
+      "source_frame": 11832,
+      "player_id": 3,
+      "box": [
+        1023.2,
+        70.0,
+        1082.4,
+        235.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 43,
+      "source_frame": 11832,
+      "player_id": 4,
+      "box": [
+        766.0,
+        81.2,
+        842.8,
+        202.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 44,
+      "source_frame": 11833,
+      "player_id": 1,
+      "box": [
+        932.0,
+        209.2,
+        1071.2,
+        455.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 44,
+      "source_frame": 11833,
+      "player_id": 2,
+      "box": [
+        1108.4,
+        240.8,
+        1241.6,
+        527.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 44,
+      "source_frame": 11833,
+      "player_id": 3,
+      "box": [
+        1024.8,
+        70.0,
+        1083.6,
+        236.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 44,
+      "source_frame": 11833,
+      "player_id": 4,
+      "box": [
+        766.0,
+        80.8,
+        843.2,
+        203.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 45,
+      "source_frame": 11834,
+      "player_id": 1,
+      "box": [
+        932.0,
+        209.6,
+        1071.6,
+        455.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 45,
+      "source_frame": 11834,
+      "player_id": 2,
+      "box": [
+        1119.2,
+        240.4,
+        1248.8,
+        526.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 45,
+      "source_frame": 11834,
+      "player_id": 3,
+      "box": [
+        1026.4,
+        70.0,
+        1084.8,
+        238.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 45,
+      "source_frame": 11834,
+      "player_id": 4,
+      "box": [
+        766.0,
+        80.4,
+        843.6,
+        203.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 46,
+      "source_frame": 11835,
+      "player_id": 1,
+      "box": [
+        932.0,
+        210.0,
+        1072.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 46,
+      "source_frame": 11835,
+      "player_id": 2,
+      "box": [
+        1130.0,
+        240.0,
+        1256.0,
+        526.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 46,
+      "source_frame": 11835,
+      "player_id": 3,
+      "box": [
+        1028.0,
+        70.0,
+        1086.0,
+        240.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 46,
+      "source_frame": 11835,
+      "player_id": 4,
+      "box": [
+        766.0,
+        80.0,
+        844.0,
+        204.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 47,
+      "source_frame": 11836,
+      "player_id": 1,
+      "box": [
+        924.8,
+        208.8,
+        1072.8,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 47,
+      "source_frame": 11836,
+      "player_id": 2,
+      "box": [
+        1138.0,
+        238.0,
+        1269.6,
+        526.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 47,
+      "source_frame": 11836,
+      "player_id": 3,
+      "box": [
+        1028.4,
+        69.6,
+        1087.2,
+        240.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 47,
+      "source_frame": 11836,
+      "player_id": 4,
+      "box": [
+        766.0,
+        80.0,
+        844.0,
+        204.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 48,
+      "source_frame": 11837,
+      "player_id": 1,
+      "box": [
+        917.6,
+        207.6,
+        1073.6,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 48,
+      "source_frame": 11837,
+      "player_id": 2,
+      "box": [
+        1146.0,
+        236.0,
+        1283.2,
+        526.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 48,
+      "source_frame": 11837,
+      "player_id": 3,
+      "box": [
+        1028.8,
+        69.2,
+        1088.4,
+        240.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 48,
+      "source_frame": 11837,
+      "player_id": 4,
+      "box": [
+        766.0,
+        80.0,
+        844.0,
+        204.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 49,
+      "source_frame": 11838,
+      "player_id": 1,
+      "box": [
+        910.4,
+        206.4,
+        1074.4,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 49,
+      "source_frame": 11838,
+      "player_id": 2,
+      "box": [
+        1154.0,
+        234.0,
+        1296.8,
+        527.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 49,
+      "source_frame": 11838,
+      "player_id": 3,
+      "box": [
+        1029.2,
+        68.8,
+        1089.6,
+        241.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 49,
+      "source_frame": 11838,
+      "player_id": 4,
+      "box": [
+        766.0,
+        80.0,
+        844.0,
+        204.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 50,
+      "source_frame": 11839,
+      "player_id": 1,
+      "box": [
+        903.2,
+        205.2,
+        1075.2,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 50,
+      "source_frame": 11839,
+      "player_id": 2,
+      "box": [
+        1162.0,
+        232.0,
+        1310.4,
+        527.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 50,
+      "source_frame": 11839,
+      "player_id": 3,
+      "box": [
+        1029.6,
+        68.4,
+        1090.8,
+        241.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 50,
+      "source_frame": 11839,
+      "player_id": 4,
+      "box": [
+        766.0,
+        80.0,
+        844.0,
+        204.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 51,
+      "source_frame": 11840,
+      "player_id": 1,
+      "box": [
+        896.0,
+        204.0,
+        1076.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 51,
+      "source_frame": 11840,
+      "player_id": 2,
+      "box": [
+        1170.0,
+        230.0,
+        1324.0,
+        528.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 51,
+      "source_frame": 11840,
+      "player_id": 3,
+      "box": [
+        1030.0,
+        68.0,
+        1092.0,
+        242.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 51,
+      "source_frame": 11840,
+      "player_id": 4,
+      "box": [
+        766.0,
+        80.0,
+        844.0,
+        204.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 52,
+      "source_frame": 11841,
+      "player_id": 1,
+      "box": [
+        895.6,
+        204.4,
+        1076.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 52,
+      "source_frame": 11841,
+      "player_id": 2,
+      "box": [
+        1176.4,
+        230.0,
+        1327.2,
+        528.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 52,
+      "source_frame": 11841,
+      "player_id": 3,
+      "box": [
+        1030.0,
+        69.2,
+        1092.8,
+        242.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 52,
+      "source_frame": 11841,
+      "player_id": 4,
+      "box": [
+        766.0,
+        80.4,
+        844.0,
+        204.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 53,
+      "source_frame": 11842,
+      "player_id": 1,
+      "box": [
+        895.2,
+        204.8,
+        1076.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 53,
+      "source_frame": 11842,
+      "player_id": 2,
+      "box": [
+        1182.8,
+        230.0,
+        1330.4,
+        529.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 53,
+      "source_frame": 11842,
+      "player_id": 3,
+      "box": [
+        1030.0,
+        70.4,
+        1093.6,
+        243.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 53,
+      "source_frame": 11842,
+      "player_id": 4,
+      "box": [
+        766.0,
+        80.8,
+        844.0,
+        205.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 54,
+      "source_frame": 11843,
+      "player_id": 1,
+      "box": [
+        894.8,
+        205.2,
+        1076.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 54,
+      "source_frame": 11843,
+      "player_id": 2,
+      "box": [
+        1189.2,
+        230.0,
+        1333.6,
+        530.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 54,
+      "source_frame": 11843,
+      "player_id": 3,
+      "box": [
+        1030.0,
+        71.6,
+        1094.4,
+        244.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 54,
+      "source_frame": 11843,
+      "player_id": 4,
+      "box": [
+        766.0,
+        81.2,
+        844.0,
+        206.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 55,
+      "source_frame": 11844,
+      "player_id": 1,
+      "box": [
+        894.4,
+        205.6,
+        1076.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 55,
+      "source_frame": 11844,
+      "player_id": 2,
+      "box": [
+        1195.6,
+        230.0,
+        1336.8,
+        531.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 55,
+      "source_frame": 11844,
+      "player_id": 3,
+      "box": [
+        1030.0,
+        72.8,
+        1095.2,
+        245.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 55,
+      "source_frame": 11844,
+      "player_id": 4,
+      "box": [
+        766.0,
+        81.6,
+        844.0,
+        207.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 56,
+      "source_frame": 11845,
+      "player_id": 1,
+      "box": [
+        894.0,
+        206.0,
+        1076.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 56,
+      "source_frame": 11845,
+      "player_id": 2,
+      "box": [
+        1202.0,
+        230.0,
+        1340.0,
+        532.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 56,
+      "source_frame": 11845,
+      "player_id": 3,
+      "box": [
+        1030.0,
+        74.0,
+        1096.0,
+        246.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 56,
+      "source_frame": 11845,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        844.0,
+        208.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 57,
+      "source_frame": 11846,
+      "player_id": 1,
+      "box": [
+        892.8,
+        207.2,
+        1077.2,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 57,
+      "source_frame": 11846,
+      "player_id": 2,
+      "box": [
+        1204.4,
+        228.4,
+        1340.4,
+        532.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 57,
+      "source_frame": 11846,
+      "player_id": 3,
+      "box": [
+        1030.0,
+        76.4,
+        1097.6,
+        246.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 57,
+      "source_frame": 11846,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        844.0,
+        208.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 58,
+      "source_frame": 11847,
+      "player_id": 1,
+      "box": [
+        891.6,
+        208.4,
+        1078.4,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 58,
+      "source_frame": 11847,
+      "player_id": 2,
+      "box": [
+        1206.8,
+        226.8,
+        1340.8,
+        533.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 58,
+      "source_frame": 11847,
+      "player_id": 3,
+      "box": [
+        1030.0,
+        78.8,
+        1099.2,
+        246.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 58,
+      "source_frame": 11847,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        844.0,
+        208.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 59,
+      "source_frame": 11848,
+      "player_id": 1,
+      "box": [
+        890.4,
+        209.6,
+        1079.6,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 59,
+      "source_frame": 11848,
+      "player_id": 2,
+      "box": [
+        1209.2,
+        225.2,
+        1341.2,
+        534.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 59,
+      "source_frame": 11848,
+      "player_id": 3,
+      "box": [
+        1030.0,
+        81.2,
+        1100.8,
+        247.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 59,
+      "source_frame": 11848,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        844.0,
+        208.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 60,
+      "source_frame": 11849,
+      "player_id": 1,
+      "box": [
+        889.2,
+        210.8,
+        1080.8,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 60,
+      "source_frame": 11849,
+      "player_id": 2,
+      "box": [
+        1211.6,
+        223.6,
+        1341.6,
+        535.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 60,
+      "source_frame": 11849,
+      "player_id": 3,
+      "box": [
+        1030.0,
+        83.6,
+        1102.4,
+        247.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 60,
+      "source_frame": 11849,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        844.0,
+        208.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 61,
+      "source_frame": 11850,
+      "player_id": 1,
+      "box": [
+        888.0,
+        212.0,
+        1082.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 61,
+      "source_frame": 11850,
+      "player_id": 2,
+      "box": [
+        1214.0,
+        222.0,
+        1342.0,
+        536.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 61,
+      "source_frame": 11850,
+      "player_id": 3,
+      "box": [
+        1030.0,
+        86.0,
+        1104.0,
+        248.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 61,
+      "source_frame": 11850,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.0,
+        844.0,
+        208.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 62,
+      "source_frame": 11851,
+      "player_id": 1,
+      "box": [
+        881.2,
+        210.8,
+        1081.6,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 62,
+      "source_frame": 11851,
+      "player_id": 2,
+      "box": [
+        1213.2,
+        222.4,
+        1340.8,
+        535.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 62,
+      "source_frame": 11851,
+      "player_id": 3,
+      "box": [
+        1027.6,
+        86.0,
+        1103.6,
+        248.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 62,
+      "source_frame": 11851,
+      "player_id": 4,
+      "box": [
+        766.0,
+        82.8,
+        843.6,
+        208.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 63,
+      "source_frame": 11852,
+      "player_id": 1,
+      "box": [
+        874.4,
+        209.6,
+        1081.2,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 63,
+      "source_frame": 11852,
+      "player_id": 2,
+      "box": [
+        1212.4,
+        222.8,
+        1339.6,
+        535.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 63,
+      "source_frame": 11852,
+      "player_id": 3,
+      "box": [
+        1025.2,
+        86.0,
+        1103.2,
+        248.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 63,
+      "source_frame": 11852,
+      "player_id": 4,
+      "box": [
+        766.0,
+        83.6,
+        843.2,
+        208.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 64,
+      "source_frame": 11853,
+      "player_id": 1,
+      "box": [
+        867.6,
+        208.4,
+        1080.8,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 64,
+      "source_frame": 11853,
+      "player_id": 2,
+      "box": [
+        1211.6,
+        223.2,
+        1338.4,
+        534.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 64,
+      "source_frame": 11853,
+      "player_id": 3,
+      "box": [
+        1022.8,
+        86.0,
+        1102.8,
+        249.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 64,
+      "source_frame": 11853,
+      "player_id": 4,
+      "box": [
+        766.0,
+        84.4,
+        842.8,
+        208.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 65,
+      "source_frame": 11854,
+      "player_id": 1,
+      "box": [
+        860.8,
+        207.2,
+        1080.4,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 65,
+      "source_frame": 11854,
+      "player_id": 2,
+      "box": [
+        1210.8,
+        223.6,
+        1337.2,
+        534.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 65,
+      "source_frame": 11854,
+      "player_id": 3,
+      "box": [
+        1020.4,
+        86.0,
+        1102.4,
+        249.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 65,
+      "source_frame": 11854,
+      "player_id": 4,
+      "box": [
+        766.0,
+        85.2,
+        842.4,
+        208.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 66,
+      "source_frame": 11855,
+      "player_id": 1,
+      "box": [
+        854.0,
+        206.0,
+        1080.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 66,
+      "source_frame": 11855,
+      "player_id": 2,
+      "box": [
+        1210.0,
+        224.0,
+        1336.0,
+        534.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 66,
+      "source_frame": 11855,
+      "player_id": 3,
+      "box": [
+        1018.0,
+        86.0,
+        1102.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 66,
+      "source_frame": 11855,
+      "player_id": 4,
+      "box": [
+        766.0,
+        86.0,
+        842.0,
+        208.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 67,
+      "source_frame": 11856,
+      "player_id": 1,
+      "box": [
+        858.8,
+        202.0,
+        1066.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 67,
+      "source_frame": 11856,
+      "player_id": 2,
+      "box": [
+        1204.0,
+        223.2,
+        1336.0,
+        530.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 67,
+      "source_frame": 11856,
+      "player_id": 3,
+      "box": [
+        1019.2,
+        85.6,
+        1101.6,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 67,
+      "source_frame": 11856,
+      "player_id": 4,
+      "box": [
+        766.0,
+        87.2,
+        842.8,
+        208.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 68,
+      "source_frame": 11857,
+      "player_id": 1,
+      "box": [
+        863.6,
+        198.0,
+        1052.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 68,
+      "source_frame": 11857,
+      "player_id": 2,
+      "box": [
+        1198.0,
+        222.4,
+        1336.0,
+        526.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 68,
+      "source_frame": 11857,
+      "player_id": 3,
+      "box": [
+        1020.4,
+        85.2,
+        1101.2,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 68,
+      "source_frame": 11857,
+      "player_id": 4,
+      "box": [
+        766.0,
+        88.4,
+        843.6,
+        208.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 69,
+      "source_frame": 11858,
+      "player_id": 1,
+      "box": [
+        868.4,
+        194.0,
+        1038.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 69,
+      "source_frame": 11858,
+      "player_id": 2,
+      "box": [
+        1192.0,
+        221.6,
+        1336.0,
+        523.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 69,
+      "source_frame": 11858,
+      "player_id": 3,
+      "box": [
+        1021.6,
+        84.8,
+        1100.8,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 69,
+      "source_frame": 11858,
+      "player_id": 4,
+      "box": [
+        766.0,
+        89.6,
+        844.4,
+        209.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 70,
+      "source_frame": 11859,
+      "player_id": 1,
+      "box": [
+        873.2,
+        190.0,
+        1024.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 70,
+      "source_frame": 11859,
+      "player_id": 2,
+      "box": [
+        1186.0,
+        220.8,
+        1336.0,
+        519.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 70,
+      "source_frame": 11859,
+      "player_id": 3,
+      "box": [
+        1022.8,
+        84.4,
+        1100.4,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 70,
+      "source_frame": 11859,
+      "player_id": 4,
+      "box": [
+        766.0,
+        90.8,
+        845.2,
+        209.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 71,
+      "source_frame": 11860,
+      "player_id": 1,
+      "box": [
+        878.0,
+        186.0,
+        1010.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 71,
+      "source_frame": 11860,
+      "player_id": 2,
+      "box": [
+        1180.0,
+        220.0,
+        1336.0,
+        516.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 71,
+      "source_frame": 11860,
+      "player_id": 3,
+      "box": [
+        1024.0,
+        84.0,
+        1100.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 71,
+      "source_frame": 11860,
+      "player_id": 4,
+      "box": [
+        766.0,
+        92.0,
+        846.0,
+        210.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 72,
+      "source_frame": 11861,
+      "player_id": 1,
+      "box": [
+        874.8,
+        186.4,
+        1008.0,
+        456.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 72,
+      "source_frame": 11861,
+      "player_id": 2,
+      "box": [
+        1178.4,
+        218.8,
+        1328.4,
+        510.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 72,
+      "source_frame": 11861,
+      "player_id": 3,
+      "box": [
+        1024.0,
+        83.2,
+        1100.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 72,
+      "source_frame": 11861,
+      "player_id": 4,
+      "box": [
+        766.4,
+        91.6,
+        846.8,
+        210.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 73,
+      "source_frame": 11862,
+      "player_id": 1,
+      "box": [
+        871.6,
+        186.8,
+        1006.0,
+        456.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 73,
+      "source_frame": 11862,
+      "player_id": 2,
+      "box": [
+        1176.8,
+        217.6,
+        1320.8,
+        505.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 73,
+      "source_frame": 11862,
+      "player_id": 3,
+      "box": [
+        1024.0,
+        82.4,
+        1100.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 73,
+      "source_frame": 11862,
+      "player_id": 4,
+      "box": [
+        766.8,
+        91.2,
+        847.6,
+        210.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 74,
+      "source_frame": 11863,
+      "player_id": 1,
+      "box": [
+        868.4,
+        187.2,
+        1004.0,
+        457.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 74,
+      "source_frame": 11863,
+      "player_id": 2,
+      "box": [
+        1175.2,
+        216.4,
+        1313.2,
+        500.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 74,
+      "source_frame": 11863,
+      "player_id": 3,
+      "box": [
+        1024.0,
+        81.6,
+        1100.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 74,
+      "source_frame": 11863,
+      "player_id": 4,
+      "box": [
+        767.2,
+        90.8,
+        848.4,
+        210.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 75,
+      "source_frame": 11864,
+      "player_id": 1,
+      "box": [
+        865.2,
+        187.6,
+        1002.0,
+        457.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 75,
+      "source_frame": 11864,
+      "player_id": 2,
+      "box": [
+        1173.6,
+        215.2,
+        1305.6,
+        495.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 75,
+      "source_frame": 11864,
+      "player_id": 3,
+      "box": [
+        1024.0,
+        80.8,
+        1100.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 75,
+      "source_frame": 11864,
+      "player_id": 4,
+      "box": [
+        767.6,
+        90.4,
+        849.2,
+        210.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 76,
+      "source_frame": 11865,
+      "player_id": 1,
+      "box": [
+        862.0,
+        188.0,
+        1000.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 76,
+      "source_frame": 11865,
+      "player_id": 2,
+      "box": [
+        1172.0,
+        214.0,
+        1298.0,
+        490.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 76,
+      "source_frame": 11865,
+      "player_id": 3,
+      "box": [
+        1024.0,
+        80.0,
+        1100.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 76,
+      "source_frame": 11865,
+      "player_id": 4,
+      "box": [
+        768.0,
+        90.0,
+        850.0,
+        210.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 77,
+      "source_frame": 11866,
+      "player_id": 1,
+      "box": [
+        858.0,
+        192.8,
+        1000.4,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 77,
+      "source_frame": 11866,
+      "player_id": 2,
+      "box": [
+        1172.8,
+        213.6,
+        1294.8,
+        492.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 77,
+      "source_frame": 11866,
+      "player_id": 3,
+      "box": [
+        1023.6,
+        80.4,
+        1100.4,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 77,
+      "source_frame": 11866,
+      "player_id": 4,
+      "box": [
+        767.6,
+        89.6,
+        850.4,
+        210.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 78,
+      "source_frame": 11867,
+      "player_id": 1,
+      "box": [
+        854.0,
+        197.6,
+        1000.8,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 78,
+      "source_frame": 11867,
+      "player_id": 2,
+      "box": [
+        1173.6,
+        213.2,
+        1291.6,
+        494.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 78,
+      "source_frame": 11867,
+      "player_id": 3,
+      "box": [
+        1023.2,
+        80.8,
+        1100.8,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 78,
+      "source_frame": 11867,
+      "player_id": 4,
+      "box": [
+        767.2,
+        89.2,
+        850.8,
+        210.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 79,
+      "source_frame": 11868,
+      "player_id": 1,
+      "box": [
+        850.0,
+        202.4,
+        1001.2,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 79,
+      "source_frame": 11868,
+      "player_id": 2,
+      "box": [
+        1174.4,
+        212.8,
+        1288.4,
+        496.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 79,
+      "source_frame": 11868,
+      "player_id": 3,
+      "box": [
+        1022.8,
+        81.2,
+        1101.2,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 79,
+      "source_frame": 11868,
+      "player_id": 4,
+      "box": [
+        766.8,
+        88.8,
+        851.2,
+        210.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 80,
+      "source_frame": 11869,
+      "player_id": 1,
+      "box": [
+        846.0,
+        207.2,
+        1001.6,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 80,
+      "source_frame": 11869,
+      "player_id": 2,
+      "box": [
+        1175.2,
+        212.4,
+        1285.2,
+        498.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 80,
+      "source_frame": 11869,
+      "player_id": 3,
+      "box": [
+        1022.4,
+        81.6,
+        1101.6,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 80,
+      "source_frame": 11869,
+      "player_id": 4,
+      "box": [
+        766.4,
+        88.4,
+        851.6,
+        210.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 81,
+      "source_frame": 11870,
+      "player_id": 1,
+      "box": [
+        842.0,
+        212.0,
+        1002.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 81,
+      "source_frame": 11870,
+      "player_id": 2,
+      "box": [
+        1176.0,
+        212.0,
+        1282.0,
+        500.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 81,
+      "source_frame": 11870,
+      "player_id": 3,
+      "box": [
+        1022.0,
+        82.0,
+        1102.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 81,
+      "source_frame": 11870,
+      "player_id": 4,
+      "box": [
+        766.0,
+        88.0,
+        852.0,
+        210.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 82,
+      "source_frame": 11871,
+      "player_id": 1,
+      "box": [
+        846.4,
+        212.4,
+        1010.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 82,
+      "source_frame": 11871,
+      "player_id": 2,
+      "box": [
+        1174.4,
+        212.0,
+        1280.0,
+        493.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 82,
+      "source_frame": 11871,
+      "player_id": 3,
+      "box": [
+        1021.2,
+        81.6,
+        1099.6,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 82,
+      "source_frame": 11871,
+      "player_id": 4,
+      "box": [
+        765.2,
+        88.0,
+        851.6,
+        210.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 83,
+      "source_frame": 11872,
+      "player_id": 1,
+      "box": [
+        850.8,
+        212.8,
+        1018.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 83,
+      "source_frame": 11872,
+      "player_id": 2,
+      "box": [
+        1172.8,
+        212.0,
+        1278.0,
+        487.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 83,
+      "source_frame": 11872,
+      "player_id": 3,
+      "box": [
+        1020.4,
+        81.2,
+        1097.2,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 83,
+      "source_frame": 11872,
+      "player_id": 4,
+      "box": [
+        764.4,
+        88.0,
+        851.2,
+        210.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 84,
+      "source_frame": 11873,
+      "player_id": 1,
+      "box": [
+        855.2,
+        213.2,
+        1026.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 84,
+      "source_frame": 11873,
+      "player_id": 2,
+      "box": [
+        1171.2,
+        212.0,
+        1276.0,
+        480.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 84,
+      "source_frame": 11873,
+      "player_id": 3,
+      "box": [
+        1019.6,
+        80.8,
+        1094.8,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 84,
+      "source_frame": 11873,
+      "player_id": 4,
+      "box": [
+        763.6,
+        88.0,
+        850.8,
+        211.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 85,
+      "source_frame": 11874,
+      "player_id": 1,
+      "box": [
+        859.6,
+        213.6,
+        1034.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 85,
+      "source_frame": 11874,
+      "player_id": 2,
+      "box": [
+        1169.6,
+        212.0,
+        1274.0,
+        474.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 85,
+      "source_frame": 11874,
+      "player_id": 3,
+      "box": [
+        1018.8,
+        80.4,
+        1092.4,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 85,
+      "source_frame": 11874,
+      "player_id": 4,
+      "box": [
+        762.8,
+        88.0,
+        850.4,
+        211.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 86,
+      "source_frame": 11875,
+      "player_id": 1,
+      "box": [
+        864.0,
+        214.0,
+        1042.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 86,
+      "source_frame": 11875,
+      "player_id": 2,
+      "box": [
+        1168.0,
+        212.0,
+        1272.0,
+        468.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 86,
+      "source_frame": 11875,
+      "player_id": 3,
+      "box": [
+        1018.0,
+        80.0,
+        1090.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 86,
+      "source_frame": 11875,
+      "player_id": 4,
+      "box": [
+        762.0,
+        88.0,
+        850.0,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 87,
+      "source_frame": 11876,
+      "player_id": 1,
+      "box": [
+        867.6,
+        212.8,
+        1043.6,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 87,
+      "source_frame": 11876,
+      "player_id": 2,
+      "box": [
+        1161.6,
+        213.2,
+        1268.4,
+        466.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 87,
+      "source_frame": 11876,
+      "player_id": 3,
+      "box": [
+        1017.6,
+        80.0,
+        1090.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 87,
+      "source_frame": 11876,
+      "player_id": 4,
+      "box": [
+        762.0,
+        87.6,
+        848.8,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 88,
+      "source_frame": 11877,
+      "player_id": 1,
+      "box": [
+        871.2,
+        211.6,
+        1045.2,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 88,
+      "source_frame": 11877,
+      "player_id": 2,
+      "box": [
+        1155.2,
+        214.4,
+        1264.8,
+        464.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 88,
+      "source_frame": 11877,
+      "player_id": 3,
+      "box": [
+        1017.2,
+        80.0,
+        1090.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 88,
+      "source_frame": 11877,
+      "player_id": 4,
+      "box": [
+        762.0,
+        87.2,
+        847.6,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 89,
+      "source_frame": 11878,
+      "player_id": 1,
+      "box": [
+        874.8,
+        210.4,
+        1046.8,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 89,
+      "source_frame": 11878,
+      "player_id": 2,
+      "box": [
+        1148.8,
+        215.6,
+        1261.2,
+        463.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 89,
+      "source_frame": 11878,
+      "player_id": 3,
+      "box": [
+        1016.8,
+        80.0,
+        1090.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 89,
+      "source_frame": 11878,
+      "player_id": 4,
+      "box": [
+        762.0,
+        86.8,
+        846.4,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 90,
+      "source_frame": 11879,
+      "player_id": 1,
+      "box": [
+        878.4,
+        209.2,
+        1048.4,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 90,
+      "source_frame": 11879,
+      "player_id": 2,
+      "box": [
+        1142.4,
+        216.8,
+        1257.6,
+        461.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 90,
+      "source_frame": 11879,
+      "player_id": 3,
+      "box": [
+        1016.4,
+        80.0,
+        1090.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 90,
+      "source_frame": 11879,
+      "player_id": 4,
+      "box": [
+        762.0,
+        86.4,
+        845.2,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 91,
+      "source_frame": 11880,
+      "player_id": 1,
+      "box": [
+        882.0,
+        208.0,
+        1050.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 91,
+      "source_frame": 11880,
+      "player_id": 2,
+      "box": [
+        1136.0,
+        218.0,
+        1254.0,
+        460.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 91,
+      "source_frame": 11880,
+      "player_id": 3,
+      "box": [
+        1016.0,
+        80.0,
+        1090.0,
+        250.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 91,
+      "source_frame": 11880,
+      "player_id": 4,
+      "box": [
+        762.0,
+        86.0,
+        844.0,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 92,
+      "source_frame": 11881,
+      "player_id": 1,
+      "box": [
+        890.8,
+        203.6,
+        1053.6,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 92,
+      "source_frame": 11881,
+      "player_id": 2,
+      "box": [
+        1135.2,
+        217.6,
+        1256.8,
+        459.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 92,
+      "source_frame": 11881,
+      "player_id": 3,
+      "box": [
+        1016.4,
+        80.0,
+        1090.4,
+        250.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 92,
+      "source_frame": 11881,
+      "player_id": 4,
+      "box": [
+        762.0,
+        86.0,
+        844.4,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 93,
+      "source_frame": 11882,
+      "player_id": 1,
+      "box": [
+        899.6,
+        199.2,
+        1057.2,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 93,
+      "source_frame": 11882,
+      "player_id": 2,
+      "box": [
+        1134.4,
+        217.2,
+        1259.6,
+        459.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 93,
+      "source_frame": 11882,
+      "player_id": 3,
+      "box": [
+        1016.8,
+        80.0,
+        1090.8,
+        250.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 93,
+      "source_frame": 11882,
+      "player_id": 4,
+      "box": [
+        762.0,
+        86.0,
+        844.8,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 94,
+      "source_frame": 11883,
+      "player_id": 1,
+      "box": [
+        908.4,
+        194.8,
+        1060.8,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 94,
+      "source_frame": 11883,
+      "player_id": 2,
+      "box": [
+        1133.6,
+        216.8,
+        1262.4,
+        458.8
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 94,
+      "source_frame": 11883,
+      "player_id": 3,
+      "box": [
+        1017.2,
+        80.0,
+        1091.2,
+        251.2
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 94,
+      "source_frame": 11883,
+      "player_id": 4,
+      "box": [
+        762.0,
+        86.0,
+        845.2,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 95,
+      "source_frame": 11884,
+      "player_id": 1,
+      "box": [
+        917.2,
+        190.4,
+        1064.4,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 95,
+      "source_frame": 11884,
+      "player_id": 2,
+      "box": [
+        1132.8,
+        216.4,
+        1265.2,
+        458.4
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 95,
+      "source_frame": 11884,
+      "player_id": 3,
+      "box": [
+        1017.6,
+        80.0,
+        1091.6,
+        251.6
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 95,
+      "source_frame": 11884,
+      "player_id": 4,
+      "box": [
+        762.0,
+        86.0,
+        845.6,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 96,
+      "source_frame": 11885,
+      "player_id": 1,
+      "box": [
+        926.0,
+        186.0,
+        1068.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 96,
+      "source_frame": 11885,
+      "player_id": 2,
+      "box": [
+        1132.0,
+        216.0,
+        1268.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 96,
+      "source_frame": 11885,
+      "player_id": 3,
+      "box": [
+        1018.0,
+        80.0,
+        1092.0,
+        252.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 96,
+      "source_frame": 11885,
+      "player_id": 4,
+      "box": [
+        762.0,
+        86.0,
+        846.0,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 97,
+      "source_frame": 11886,
+      "player_id": 1,
+      "box": [
+        930.4,
+        190.0,
+        1078.4,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 97,
+      "source_frame": 11886,
+      "player_id": 2,
+      "box": [
+        1132.0,
+        211.6,
+        1271.2,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 97,
+      "source_frame": 11886,
+      "player_id": 3,
+      "box": [
+        1018.4,
+        80.0,
+        1092.0,
+        252.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 97,
+      "source_frame": 11886,
+      "player_id": 4,
+      "box": [
+        761.6,
+        85.6,
+        846.8,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 98,
+      "source_frame": 11887,
+      "player_id": 1,
+      "box": [
+        934.8,
+        194.0,
+        1088.8,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 98,
+      "source_frame": 11887,
+      "player_id": 2,
+      "box": [
+        1132.0,
+        207.2,
+        1274.4,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 98,
+      "source_frame": 11887,
+      "player_id": 3,
+      "box": [
+        1018.8,
+        80.0,
+        1092.0,
+        252.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 98,
+      "source_frame": 11887,
+      "player_id": 4,
+      "box": [
+        761.2,
+        85.2,
+        847.6,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 99,
+      "source_frame": 11888,
+      "player_id": 1,
+      "box": [
+        939.2,
+        198.0,
+        1099.2,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 99,
+      "source_frame": 11888,
+      "player_id": 2,
+      "box": [
+        1132.0,
+        202.8,
+        1277.6,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 99,
+      "source_frame": 11888,
+      "player_id": 3,
+      "box": [
+        1019.2,
+        80.0,
+        1092.0,
+        252.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 99,
+      "source_frame": 11888,
+      "player_id": 4,
+      "box": [
+        760.8,
+        84.8,
+        848.4,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 100,
+      "source_frame": 11889,
+      "player_id": 1,
+      "box": [
+        943.6,
+        202.0,
+        1109.6,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 100,
+      "source_frame": 11889,
+      "player_id": 2,
+      "box": [
+        1132.0,
+        198.4,
+        1280.8,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 100,
+      "source_frame": 11889,
+      "player_id": 3,
+      "box": [
+        1019.6,
+        80.0,
+        1092.0,
+        252.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 100,
+      "source_frame": 11889,
+      "player_id": 4,
+      "box": [
+        760.4,
+        84.4,
+        849.2,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 101,
+      "source_frame": 11890,
+      "player_id": 1,
+      "box": [
+        948.0,
+        206.0,
+        1120.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 101,
+      "source_frame": 11890,
+      "player_id": 2,
+      "box": [
+        1132.0,
+        194.0,
+        1284.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 101,
+      "source_frame": 11890,
+      "player_id": 3,
+      "box": [
+        1020.0,
+        80.0,
+        1092.0,
+        252.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 101,
+      "source_frame": 11890,
+      "player_id": 4,
+      "box": [
+        760.0,
+        84.0,
+        850.0,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 102,
+      "source_frame": 11891,
+      "player_id": 1,
+      "box": [
+        952.5,
+        205.0,
+        1121.5,
+        457.5
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 102,
+      "source_frame": 11891,
+      "player_id": 2,
+      "box": [
+        1146.0,
+        192.5,
+        1286.5,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 102,
+      "source_frame": 11891,
+      "player_id": 3,
+      "box": [
+        1020.5,
+        80.0,
+        1092.0,
+        252.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 102,
+      "source_frame": 11891,
+      "player_id": 4,
+      "box": [
+        760.5,
+        84.5,
+        850.5,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 103,
+      "source_frame": 11892,
+      "player_id": 1,
+      "box": [
+        957.0,
+        204.0,
+        1123.0,
+        457.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 103,
+      "source_frame": 11892,
+      "player_id": 2,
+      "box": [
+        1160.0,
+        191.0,
+        1289.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 103,
+      "source_frame": 11892,
+      "player_id": 3,
+      "box": [
+        1021.0,
+        80.0,
+        1092.0,
+        252.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 103,
+      "source_frame": 11892,
+      "player_id": 4,
+      "box": [
+        761.0,
+        85.0,
+        851.0,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 104,
+      "source_frame": 11893,
+      "player_id": 1,
+      "box": [
+        961.5,
+        203.0,
+        1124.5,
+        456.5
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 104,
+      "source_frame": 11893,
+      "player_id": 2,
+      "box": [
+        1174.0,
+        189.5,
+        1291.5,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 104,
+      "source_frame": 11893,
+      "player_id": 3,
+      "box": [
+        1021.5,
+        80.0,
+        1092.0,
+        252.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 104,
+      "source_frame": 11893,
+      "player_id": 4,
+      "box": [
+        761.5,
+        85.5,
+        851.5,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": false,
+      "method": "linear_interpolation"
+    },
+    {
+      "frame": 105,
+      "source_frame": 11894,
+      "player_id": 1,
+      "box": [
+        966.0,
+        202.0,
+        1126.0,
+        456.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 105,
+      "source_frame": 11894,
+      "player_id": 2,
+      "box": [
+        1188.0,
+        188.0,
+        1294.0,
+        458.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 105,
+      "source_frame": 11894,
+      "player_id": 3,
+      "box": [
+        1022.0,
+        80.0,
+        1092.0,
+        252.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    },
+    {
+      "frame": 105,
+      "source_frame": 11894,
+      "player_id": 4,
+      "box": [
+        762.0,
+        86.0,
+        852.0,
+        212.0
+      ],
+      "occluded": false,
+      "keyframe": true,
+      "method": "assistant_visual_keyframe"
+    }
+  ]
+}

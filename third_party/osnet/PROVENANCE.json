@@ -1,0 +1,17 @@
+{
+  "osnet.py": {
+    "url": "https://raw.githubusercontent.com/KaiyangZhou/deep-person-reid/master/torchreid/models/osnet.py",
+    "sha256": "c7c1c29187d6330f859c91da229271531920464c7011aec13842a086b2263cae"
+  },
+  "LICENSE": {
+    "url": "https://raw.githubusercontent.com/KaiyangZhou/deep-person-reid/master/LICENSE",
+    "sha256": "3ac8ce2a83d170cb1c7c84152e0c1faca1f187794303514383960d2441716247"
+  },
+  "weights": {
+    "url": "https://drive.google.com/uc?id=1sSwXSUlj4_tHZequ_iZ8w_Jh0VaRQMqF",
+    "sha256": "6f57607fed9f502b9efed546108132ee715df5a5b6e6932c6269bacb47f59f99",
+    "reference": "https://github.com/KaiyangZhou/deep-person-reid/blob/master/docs/MODEL_ZOO.md",
+    "training_dataset": "MSMT17",
+    "architecture": "osnet_x0_25"
+  }
+}
